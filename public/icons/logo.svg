@@ -1,0 +1,28 @@
+<svg width="359" height="249" viewBox="0 0 359 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M160.823 66.4783C160.823 103.161 131.085 132.899 94.4024 132.899C57.7194 132.899 27.982 103.161 27.982 66.4783C27.982 29.7954 57.7194 0.0579529 94.4024 0.0579529C131.085 0.0579529 160.823 29.7954 160.823 66.4783Z" fill="url(#paint0_radial_3462_700)"/>
+<g filter="url(#filter0_ii_3462_700)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M166.285 248.779V248.782H78.9403C35.4654 248.782 0.222 213.539 0.222 170.064C0.222 126.589 35.4654 91.3459 78.9403 91.3459H83.2536C98.5125 91.3459 112.81 95.4619 125.096 102.644C141.069 55.3228 185.821 21.2509 238.532 21.2509H244.463C307.293 21.2509 358.227 72.1848 358.227 135.015C358.227 197.845 307.293 248.779 244.463 248.779H166.285Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_ii_3462_700" x="-188.152" y="-135.728" width="630.101" height="499.628" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="83.722" dy="-156.979"/>
+<feGaussianBlur stdDeviation="156.979"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_3462_700"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-188.374" dy="115.118"/>
+<feGaussianBlur stdDeviation="156.979"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_3462_700" result="effect2_innerShadow_3462_700"/>
+</filter>
+<radialGradient id="paint0_radial_3462_700" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120.83 30.2733) rotate(132.136) scale(138.393 138.393)">
+<stop stop-color="#FFF72C"/>
+<stop offset="1" stop-color="#DF7800"/>
+</radialGradient>
+</defs>
+</svg>

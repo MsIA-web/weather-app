@@ -41,18 +41,13 @@ export default defineNuxtConfig({
 		},
 	},
 	sitemap: {
-		hostname: 'http://localhost:3000',
+		hostname: 'https://test-9qvg.vercel.app/',
 		routes: async () => {
 			const citiesData = require('~/public/cities.json')
-			console.log('citiesData: ', citiesData)
 			const cityRoutes = citiesData.map(
 				(city: any) => `/city?city=${encodeURIComponent(city.ru || city.en)}`
 			)
-			console.log('cityRoutes: ', cityRoutes)
-
 			const allRoutes = ['/', '/city', ...cityRoutes]
-
-			console.log('allRoutes: ', allRoutes)
 			return allRoutes
 		},
 	},

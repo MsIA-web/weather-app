@@ -3,11 +3,11 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 
 	modules: [
-		'@pinia/nuxt',
 		'@vueuse/nuxt',
 		'@formkit/auto-animate/nuxt',
 		'nuxt-svgo',
 		'@vite-pwa/nuxt',
+		'@nuxtjs/sitemap',
 	],
 	runtimeConfig: {
 		private: {
@@ -38,6 +38,22 @@ export default defineNuxtConfig({
 					additionalData: `@use "~/assets/styles/helpers" as *;`,
 				},
 			},
+		},
+	},
+	sitemap: {
+		hostname: 'http://localhost:3000',
+		routes: async () => {
+			const citiesData = require('~/public/cities.json')
+			console.log('citiesData: ', citiesData)
+			const cityRoutes = citiesData.map(
+				(city: any) => `/city?city=${encodeURIComponent(city.ru || city.en)}`
+			)
+			console.log('cityRoutes: ', cityRoutes)
+
+			const allRoutes = ['/', '/city', ...cityRoutes]
+
+			console.log('allRoutes: ', allRoutes)
+			return allRoutes
 		},
 	},
 	pwa: {

@@ -56,7 +56,7 @@
     </div>
     <div v-if="weatherData.length" class="favorite-cards">
         <NuxtLink  v-for="(item, index) in weatherData" :to="{path: 'city', query: {city: item.city}}" query: item.city>
-          <PreviewCard   :key="index" :city="item.city" :dataWeather="item.weather" />
+          <PreviewCard :aria-label="`Перейти на страницу города ${item.city}`"  :key="index" :city="item.city" :dataWeather="item.weather" />
         </NuxtLink>
     </div>
   </div>

@@ -23,6 +23,9 @@ export default defineNuxtConfig({
 		head: {
 			link: [{ rel: 'icon', type: 'image/svg+xml', href: '/icons/logo.svg' }],
 			title: 'WeatherCheck',
+			htmlAttrs: {
+				lang: 'ru', 
+		  	},
 			meta: [
 				{name: 'description', content: 'Узнавай погоду в любой точке мира в режиме реального времени.'},
 				{name: 'keywords', content: 'weather, погода, temperature, температура, pressure, давление, sunset, закат'},

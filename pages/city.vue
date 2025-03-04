@@ -3,7 +3,7 @@ import { useFavorites } from '~/composables/useFavorites.client'
 
 definePageMeta({
 	layout: 'default',
-	hideHeader: true
+	hideHeader: true,
 })
 
 const route = useRoute()
@@ -26,7 +26,7 @@ const toggleFavorite = () => {
 	<div class="city">
 		<div class="city__inner container">
 			<div class="city__header">
-				<NuxtLink to="/" class="city__back-link">
+				<NuxtLink to="/" class="city__back-link" aria-label="Вернуться назад">
 					<svg-arrow-back />
 					<span>Назад</span>
 				</NuxtLink>
@@ -36,11 +36,13 @@ const toggleFavorite = () => {
 							v-if="!isCityFavorite"
 							:fontControlled="false"
 							class="city__favorite-icon"
+							aria-label="Добавить в избранное"
 						/>
 						<svg-bookmark-active
 							v-else
 							:fontControlled="false"
 							class="city__favorite-icon"
+							aria-label="Убрать из избранного"
 						/>
 					</button>
 				</ClientOnly>

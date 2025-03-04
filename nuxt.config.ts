@@ -8,7 +8,6 @@ export default defineNuxtConfig({
 		'@formkit/auto-animate/nuxt',
 		'nuxt-svgo',
 		'@vite-pwa/nuxt',
-		'@nuxtjs/critters',
 	],
 	runtimeConfig: {
 		private: {

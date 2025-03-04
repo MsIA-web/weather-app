@@ -26,7 +26,7 @@ export default defineNuxtConfig({
 			meta: [
 				{name: 'description', content: 'Узнавай погоду в любой точке мира в режиме реального времени.'},
 				{name: 'keywords', content: 'weather, погода, temperature, температура, pressure, давление, sunset, закат'},
-				{name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'},
+				{name: 'viewport', content: 'width=device-width, initial-scale=1},
 				{'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8'}
 			],
 		},

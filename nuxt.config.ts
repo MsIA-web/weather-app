@@ -8,6 +8,7 @@ export default defineNuxtConfig({
 		'@formkit/auto-animate/nuxt',
 		'nuxt-svgo',
 		'@vite-pwa/nuxt',
+		'@nuxtjs/critters',
 	],
 	runtimeConfig: {
 		private: {
@@ -23,6 +24,12 @@ export default defineNuxtConfig({
 		head: {
 			link: [{ rel: 'icon', type: 'image/svg+xml', href: '/icons/logo.svg' }],
 			title: 'WeatherCheck',
+			meta: [
+				{name: 'description', content: 'Узнавай погоду в любой точке мира в режиме реального времени.'},
+				{name: 'keywords', content: 'weather, погода, temperature, температура, pressure, давление, sunset, закат'},
+				{name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'},
+				{'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8'}
+			],
 		},
 	},
 	vite: {
